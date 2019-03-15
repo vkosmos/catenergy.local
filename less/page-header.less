@@ -1,0 +1,56 @@
+.page-header {
+    display: flex;
+    flex-direction: column;
+    //min-height: 66px;
+
+    padding: 0 20px;
+
+    background-color: rgba(0,0,255,0.2);
+}
+
+.page-header__logo-wrapper {
+    background-color: rgba(255,0,0,0.2);
+    min-height: 66px;
+}
+
+.page-header__logo-link {
+
+}
+
+.page-header__logo-image {
+
+}
+
+.page-header__logo-text {
+
+}
+
+@media (min-width: @tablet-width) {
+
+    .page-header {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        align-items: center;
+
+        min-height: 110px;
+        padding: 0 30px;
+    }
+
+}
+
+@media (min-width: @desktop-width) {
+
+    .page-header {
+        position: relative;
+        z-index: 2;
+
+        min-height: 170px;
+        padding: 0 70px;
+    }
+
+    .page-header__logo-image {
+
+    }
+
+}

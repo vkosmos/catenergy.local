@@ -1,0 +1,33 @@
+.site-list {
+    .reset-list();
+    text-align: center;
+}
+
+.site-list__item {
+    min-height: 66px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-list__item--active {
+
+}
+
+@media (min-width: @tablet-width) {
+
+    .site-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .site-list__item {
+        height: auto;
+
+        background-color: rgba(255,0,0,0.2);
+        min-height: 20px;
+        width: 150px;
+    }
+
+
+}

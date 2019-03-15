@@ -1,0 +1,148 @@
+.weight {
+    padding: 0 20px;
+}
+
+.weight__loss {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+
+    .weight__logo {
+        width: 50px;
+        height: 52px;
+    }
+}
+
+.weight__gain {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+
+    .weight__logo {
+        width: 67px;
+        height: 50px;
+    }
+}
+
+.weight__loss-wrapper {
+}
+
+.weight__gain-wrapper {
+}
+
+.weight__slogan {
+    font-family : 'Oswald', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.weight__link {
+    font-family : 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #111;
+}
+
+.weight__text {
+
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin-top: 30px;
+        background-color: #444;
+    }
+}
+
+
+@media (min-width: @tablet-width) {
+
+    .weight {
+        padding: 0 30px;
+    }
+
+    .weight__loss-wrapper {
+        position: relative;
+        box-sizing: border-box;
+        min-height: 370px;
+
+        padding: 75px 320px 50px 50px;
+
+        .weight__logo {
+            position: absolute;
+            right: 80px;
+            top: 90px;
+            width: 200px;
+            height: 212px;
+        }
+    }
+
+    .weight__gain-wrapper {
+        position: relative;
+        box-sizing: border-box;
+        min-height: 370px;
+
+        padding: 75px 320px 50px 50px;
+
+        .weight__logo {
+            position: absolute;
+            right: 40px;
+            top: 90px;
+            width: 268px;
+            height: 200px;
+        }
+    }
+
+    .weight__text {
+
+        &:after {
+            display: none;
+        }
+    }
+
+
+}
+
+@media (min-width: @desktop-width) {
+
+    .weight {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0 110px;
+    }
+
+    .weight__loss,
+    .weight__gain {
+        padding: 0;
+    }
+
+    .weight__loss-wrapper {
+        position: static;
+        width: 570px;
+        padding: 50px;
+
+        .weight__logo {
+            position: static;
+            width: 100px;
+            height: 106px;
+        }
+    }
+
+    .weight__gain-wrapper {
+        position: static;
+        width: 570px;
+        padding: 50px;
+
+        .weight__logo {
+            position: static;
+            width: 134px;
+            height: 100px;
+        }
+    }
+
+
+}

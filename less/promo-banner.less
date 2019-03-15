@@ -1,0 +1,117 @@
+.promo-banner {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    min-height: 500px;
+
+    background-image:
+            url("/images/banner-background-white.jpg"),
+            url("/images/banner-background.jpg");
+    background-position: 0 100%, 100% 0;
+    background-repeat: repeat-x, no-repeat;
+    background-size: auto, 450px;
+
+    background-color: rgba(255,0,0,0.2);
+}
+
+.promo-banner__slogan {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.promo-banner__text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.promo-banner__link {
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+
+    display: block;
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+
+    background-color: #68b738;
+}
+
+.promo-banner__image {
+    position: absolute;
+    bottom: 50px;
+
+    width: 280px;
+    height: 270px;
+    background-image: url("/images/banner.png");
+}
+
+
+@media (min-width: @tablet-width) {
+
+    .promo-banner {
+        align-items: flex-start;
+
+        height: 840px;
+
+        background-image: none;
+    }
+
+    .promo-banner__slogan {
+        font-size: 60px;
+        color: #111;
+    }
+
+    .promo-banner__text {
+        font-size: 20px;
+        color: #111;
+    }
+
+    .promo-banner__link {
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .promo-banner__image {
+        width: 709px;
+        height: 609px;
+        background-image: url("/images/banner-tablet.png");
+        z-index: -1;
+    }
+
+}
+
+@media (min-width: @desktop-width) {
+
+    .promo-banner {
+        height: 610px;
+
+        background-image: url("/images/banner-background.jpg");
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+
+        margin-top: -170px;
+        padding-top: 170px;
+
+    }
+
+    .promo-banner__image {
+        width: 552px;
+        height: 499px;
+        background-image: url("/images/banner-desktop.png");
+
+        top: 160px;
+        right: 400px;
+        z-index: 0;
+    }
+
+}
+
