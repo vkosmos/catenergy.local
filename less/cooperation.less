@@ -1,0 +1,46 @@
+.cooperation {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    //background-color: rgba(255,255,0,0.2);
+}
+
+.cooperation__title {
+    width: 130px;
+    margin: 0;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.cooperation__address {
+    width: 141px;
+    margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+
+    .cooperation__title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .cooperation__address {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+
+@media (min-width: @desktop-width) {
+
+    .cooperation {
+        padding: 70px 75px;
+    }
+
+    .cooperation__address {
+        margin-left: 75px;
+    }
+}

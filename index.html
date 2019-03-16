@@ -13,7 +13,7 @@
 
     <div class="wrapper">
 
-        <header class="page-header">
+        <header class="page-header main-nav--nojs">
 
             <div class="page-header__logo-wrapper">
                 <a href="#" class="page-header__logo-link">
@@ -21,10 +21,13 @@
                 </a>
 
                 <img src="/images/header-mobile-logo-text.png" alt="Cat energy" class="page-header__logo-text">
-                <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+                <button class="main-nav__toggle main_nav__toggle--closed" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
             </div>
 
-            <nav class="main-nav">
+            <nav class="main-nav main-nav--closed">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item site-list__item--active">
                         <a>Главная</a>
@@ -46,7 +49,7 @@
 
             <section class="promo-banner">
 
-                <b class="promo-banner__slogan">Функциональное питание для котов</b>
+                <b class="promo-banner__slogan">Функциональное<br>питание для котов</b>
                 <p class="promo-banner__text">Занялся собой? Займись котом!</p>
 
                 <a href="#" class="promo-banner__link">Подобрать программу</a>
@@ -60,13 +63,13 @@
                 <div class="weight__loss">
 
                     <div class="weight__loss-wrapper">
-
-                        <img src="/images/weight-loss-image.png" alt="Похудение" class="weight__logo">
-                        <b class="weight__slogan">Похудение</b>
+                        <header class="weight__header">
+                            <img src="/images/weight-loss-image.png" alt="Похудение" class="weight__logo">
+                            <b class="weight__slogan">Похудение</b>
+                        </header>
 
                         <p class="weight__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                         <a href="#" class="weight__link">Каталог slim</a>
-
                     </div>
 
                 </div>
@@ -79,7 +82,7 @@
                             <b class="weight__slogan">Набор массы</b>
                         </header>
 
-                        <p class="weight__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                        <p class="weight__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                         <a href="#" class="weight__link">Каталог pro</a>
                     </div>
 
@@ -119,36 +122,36 @@
 
             </section>
 
-            <section class="example">
-                <h2 class="example__title">Живой пример</h2>
-                <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <!--<section class="example">-->
+                <!--<h2 class="example__title">Живой пример</h2>-->
+                <!--<p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>-->
 
-                <div class="example__wrapper">
+                <!--<div class="example__wrapper">-->
 
-                    <div class="example__weight">
-                        <b>5 кг</b>
-                        <p>снижение веса</p>
-                    </div>
+                    <!--<div class="example__weight">-->
+                        <!--<b>5 кг</b>-->
+                        <!--<p>снижение веса</p>-->
+                    <!--</div>-->
 
-                    <div class="example__time">
-                        <b>60 дней</b>
-                        <p>затрачено времени</p>
-                    </div>
+                    <!--<div class="example__time">-->
+                        <!--<b>60 дней</b>-->
+                        <!--<p>затрачено времени</p>-->
+                    <!--</div>-->
 
-                    <div class="example__costs">
-                        <p>Затраты на питание: 15000 руб.</p>
-                    </div>
+                    <!--<div class="example__costs">-->
+                        <!--<p>Затраты на питание: 15000 руб.</p>-->
+                    <!--</div>-->
 
-                </div>
+                <!--</div>-->
 
-                <div class="example__demonstration">
-                    <img src="http://placehold.it/320x240" alt="Кот Борис похудел на 5 кг за 2 месяца" class="example__image">
-                    <div class="exmple__toddler">
+                <!--<div class="example__demonstration">-->
+                    <!--<img src="http://placehold.it/320x240" alt="Кот Борис похудел на 5 кг за 2 месяца" class="example__image">-->
+                    <!--<div class="exmple__toddler">-->
 
-                    </div>
-                </div>
+                    <!--</div>-->
+                <!--</div>-->
 
-            </section>
+            <!--</section>-->
 
         </main>
 
@@ -158,43 +161,72 @@
                 <h2 class="cooperation__title">
                     Приглашаем к сотрудничеству дилеров!
                 </h2>
-                <p class="cooperation__adress">
+                <p class="cooperation__address">
                     ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
                 </p>
             </div>
 
             <div class="page-footer__map">
-                <img src="http://placehold.it/300x200v" alt="Карта. Как до нас добраться." class="page-header__logo-image">
+                <!--<img src="/images/map.jpg" alt="Карта. Как до нас добраться." class="page-header__logo-image" width="320px" height="360px">-->
             </div>
 
-            <a href="#" class="page-header__logo-link">
-                <img src="http://placehold.it/33x28" alt="Cat energy" class="page-header__logo-image">
-            </a>
+            <div class="page-footer__wrapper">
 
-            <div class="page-footer__social social">
-                <div class="social__list">
-                    <li class="social__item">
-                        <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link social__link--instagramm">Мы в Инстрагнамме</a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link social__link--facebook">Мы в Фейсбук</a>
-                    </li>
+                <div class="page-footer__logo-wrapper">
+                    <a href="#" class="page-footer__logo-link">
+                        <img src="/images/footer-logo.png" alt="Cat energy" class="page-header__logo-image">
+                    </a>
                 </div>
-            </div>
 
-            <div class="page-footer__copyright copyright">
+                <div class="page-footer__social social">
+                    <div class="social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--instagramm">Мы в Инстрагнамме</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--facebook">Мы в Фейсбук</a>
+                        </li>
+                    </div>
+                </div>
 
-                <b class="copyright__text">VKosmos</b>
-                <img src="http://placehold.it/20x20" alt="Разработано ВКосмос" class="copyright__image">
+                <div class="page-footer__copyright copyright">
+
+                    <b class="copyright__text">VKosmos</b>
+                    <img src="http://placehold.it/30x30" alt="Разработано ВКосмос" class="copyright__image">
+
+                </div>
 
             </div>
 
         </footer>
 
     </div>
+
+    <script>
+        var pageHeader = document.querySelector('.page-header');
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        pageHeader.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+
+            if (navMain.classList.contains('main-nav--closed')) {
+                navMain.classList.remove('main-nav--closed');
+                navToggle.classList.remove('main-nav__toggle--closed');
+                navMain.classList.add('main-nav--opened');
+                navToggle.classList.add('main-nav__toggle--opened')
+            } else {
+                navMain.classList.add('main-nav--closed');
+                navToggle.classList.add('main-nav__toggle--closed');
+                navMain.classList.remove('main-nav--opened');
+                navToggle.classList.remove('main-nav__toggle--opened')
+            }
+        });
+    </script>
 
 </body>
 </html>

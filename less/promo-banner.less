@@ -3,9 +3,10 @@
     flex-direction: column;
 
     position: relative;
-
     min-height: 500px;
+    margin-bottom: 25px;
 
+    background-color: #63a73a;
     background-image:
             url("/images/banner-background-white.jpg"),
             url("/images/banner-background.jpg");
@@ -13,7 +14,6 @@
     background-repeat: repeat-x, no-repeat;
     background-size: auto, 450px;
 
-    background-color: rgba(255,0,0,0.2);
 }
 
 .promo-banner__slogan {
@@ -59,24 +59,29 @@
 
     .promo-banner {
         align-items: flex-start;
-
         height: 840px;
-
+        background-color: transparent;
         background-image: none;
     }
 
     .promo-banner__slogan {
         font-size: 60px;
+        line-height: 72px;
+        margin-left: 120px;
+        margin-bottom: 25px;
         color: #111;
     }
 
     .promo-banner__text {
         font-size: 20px;
+        margin-left: 120px;
+        margin-bottom: 45px;
         color: #111;
     }
 
     .promo-banner__link {
         display: inline-block;
+        margin-left: 120px;
         margin-top: 0;
     }
 
@@ -94,13 +99,12 @@
     .promo-banner {
         height: 610px;
 
-        background-image: url("/images/banner-background.jpg");
-        background-position: 100% 0;
-        background-repeat: no-repeat;
-
         margin-top: -170px;
         padding-top: 170px;
 
+        background-image: url("/images/banner-background.jpg");
+        background-position: 100% 0;
+        background-repeat: no-repeat;
     }
 
     .promo-banner__image {
