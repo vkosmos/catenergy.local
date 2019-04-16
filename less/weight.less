@@ -67,6 +67,23 @@
         height: 11px;
         background-image: url("/images/arrow.png");
     }
+
+    &:hover {
+        &:after{
+            right: -43px;
+            width: 33px;
+            background-image: url("/images/arrow-big.png");
+        }
+    }
+
+    &:active {
+        opacity: 0.3;
+        &:after{
+            right: -43px;
+            width: 33px;
+            background-image: url("/images/arrow-big.png");
+        }
+    }
 }
 
 .weight__text {
@@ -170,32 +187,55 @@
         padding: 0 110px;
     }
 
+    .weight__header {
+        align-items: center;
+        min-height: 100px;
+        margin-bottom: 40px;
+    }
+
+    .weight__slogan {
+        padding: 0;
+        margin: 0;
+    }
+
     .weight__loss,
     .weight__gain {
         padding: 0;
     }
 
     .weight__loss-wrapper {
-        position: static;
+        position: relative;
         width: 570px;
         padding: 50px;
 
         .weight__logo {
-            position: static;
+            position: absolute;
+            left: 50px;
+            top: 45px;
             width: 100px;
             height: 106px;
+        }
+
+        .weight__slogan {
+            padding-left: 160px;
         }
     }
 
     .weight__gain-wrapper {
-        position: static;
+        position: relative;
         width: 570px;
         padding: 50px;
 
         .weight__logo {
-            position: static;
+            position: absolute;
+            top: 50px;
+            left: 35px;
             width: 134px;
             height: 100px;
+        }
+
+        .weight__slogan {
+            padding-left: 160px;
         }
     }
 

@@ -4,12 +4,10 @@
 }
 
 .site-list__item {
-    //min-height: 66px;
     margin: 0;
     padding: 0;
-
+    font-family: 'Oswald', sans-serif;
     border-top: 1px solid #e6e6e6;
-
 }
 
 .site-list__item a {
@@ -20,31 +18,12 @@
     color: #000;
 }
 
-.site-list__item--active {
-    .site-list__item a[href] {
-        &:hover {
-            color: #707070;
-            background-color: #68b738;
-        }
-
-        &:active {
-            opacity: #b7b7b7;
-            background-color: #68b738;
-        }
+.site-list__item a[href] {
+    &:hover {
+        opacity: 0.6;
     }
-}
-
-@media (max-width: @mobile-width-only) {
-    .site-list__item a[href] {
-        &:hover {
-            color: #707070;
-            background-color: #68b738;
-        }
-
-        &:active {
-            opacity: #b7b7b7;
-            background-color: #68b738;
-        }
+    &:active {
+        opacity: 0.3;
     }
 }
 
@@ -53,7 +32,7 @@
     .site-list {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
     }
@@ -61,21 +40,42 @@
     .site-list__item {
         height: auto;
         min-height: 20px;
-        margin-left: 40px;
-
         border-top: none;
     }
 
+    .site-list__item a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
     .site-list__item a[href] {
+
         &:hover {
-            color: #707070;
-            background-color: #68b738;
+            opacity: 0.6;
         }
 
         &:active {
-            opacity: #b7b7b7;
-            background-color: #68b738;
+            opacity: 0.3;
         }
+    }
+
+    .site-list__item a:not([href]) {
+        border-bottom: 2px solid #68b738;
+    }
+}
+
+@media (min-width: @desktop-width) {
+
+    .site-list a:not([href]){
+        border-bottom: 2px solid #fff;
+    }
+
+    .site-list__item a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .site-list__item a:not([href]) {
+        border-bottom: 3px solid #68b738;
     }
 
 }

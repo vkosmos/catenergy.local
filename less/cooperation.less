@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 20px;
-    //background-color: rgba(255,255,0,0.2);
 }
 
 .cooperation__title {
@@ -22,15 +21,30 @@
 
 @media (min-width: @tablet-width) {
 
+    .cooperation {
+        padding: 70px;
+    }
+
     .cooperation__title {
         font-size: 20px;
         line-height: 25px;
+        width: 200px;
     }
 
     .cooperation__address {
         font-size: 16px;
         line-height: 20px;
+
+        text-align: right;
+        width: 160px;
+
+        span {
+            display: block;
+            margin-top: 15px;
+        }
     }
+
+
 }
 
 

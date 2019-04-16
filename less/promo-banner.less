@@ -2,9 +2,13 @@
     display: flex;
     flex-direction: column;
 
+    align-items: center;
+
     position: relative;
     min-height: 500px;
     margin-bottom: 25px;
+
+    padding-top: 30px;
 
     background-color: #63a73a;
     background-image:
@@ -13,7 +17,6 @@
     background-position: 0 100%, 100% 0;
     background-repeat: repeat-x, no-repeat;
     background-size: auto, 450px;
-
 }
 
 .promo-banner__slogan {
@@ -32,17 +35,30 @@
 }
 
 .promo-banner__link {
+    display: block;
 
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
     line-height: 18px;
 
-    display: block;
+    width: calc(100% - 20px);
+
     margin-top: auto;
     padding: 10px;
     text-align: center;
 
     background-color: #68b738;
+
+}
+
+.promo-banner__link span {
+    &:hover{
+        opacity: 0.6;
+    }
+
+    &:active{
+        opacity: 0.3;
+    }
 }
 
 .promo-banner__image {
@@ -81,8 +97,11 @@
 
     .promo-banner__link {
         display: inline-block;
+        width: auto;
+        font-size: 20px;
         margin-left: 120px;
         margin-top: 0;
+        padding: 15px 28px;
     }
 
     .promo-banner__image {
@@ -115,6 +134,14 @@
         top: 160px;
         right: 400px;
         z-index: 0;
+    }
+
+    .promo-banner__text {
+        margin-bottom: 70px;
+    }
+
+    .promo-banner__link {
+        padding: 15px 25px;
     }
 
 }
